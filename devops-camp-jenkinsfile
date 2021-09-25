@@ -27,7 +27,7 @@ pipeline {
     }
     post {
         always {
-            echo "Post actions"
+            echo "Post action"
 		sh 'docker system prune -f'
 		sh 'rm -rf .git ./*'
         }
